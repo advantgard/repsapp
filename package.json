@@ -1,5 +1,5 @@
 {
-  "name": "@avantgard/repsapp",
+  "name": "@advantgard/repsapp",
   "version": "0.1.0",
   "description": "A Crossfit tool that helps calculate your PR percentages",
   "main": "src/app.jsx",
