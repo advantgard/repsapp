@@ -7,7 +7,7 @@ const config = {
   entry: {
     "app": [
       "react-hot-loader/patch",
-      "./src/index.jsx"
+	    "./src/index.js"
     ]
   },
   output: {
@@ -18,7 +18,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
+	      test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       },
