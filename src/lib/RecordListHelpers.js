@@ -1,0 +1,1 @@
+export const round5 = number => Math.ceil(number / 5) * 5;
