@@ -1,6 +1,6 @@
 import React from "react";
-import {round5} from "../../lib/RecordListHelpers";
-import {RecordListRow} from "./RecordListRow";
+import { round5 } from "../../lib/RecordListHelpers";
+import { RecordListRow } from "./RecordListRow";
 
 export const RecordList = (props) => {
 
@@ -9,13 +9,13 @@ export const RecordList = (props) => {
 
 	let listElements = [];
 
-	for (let i = 1; i <= props.steps; i++) {
+	for ( let i = 1; i <= props.steps; i++ ) {
 
 		listElements.push(
 			<RecordListRow
 				key={i}
-				label={(percentage * i) + "%"}
-				percentage={round5(unit * i)}
+				label={percentage * i}
+				percentage={round5( unit * i )}
 			/>
 		);
 

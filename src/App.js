@@ -1,11 +1,11 @@
 import React from "react";
-import {RecordList} from "./components/RecordList";
+import { RecordList } from "./components/RecordList";
 
 export default class App extends React.Component {
 
 	render() {
 
-		return <RecordList record={185} steps={10}/>;
+		return <RecordList record={160} steps={10}/>;
 
 	}
 
