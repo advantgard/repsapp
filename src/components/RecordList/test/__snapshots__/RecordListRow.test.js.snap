@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordListRow renders correctly 1`] = `
+<li
+  className="record-list__row"
+>
+  <div
+    className="record-list__label-item"
+  >
+     
+    10%
+     
+  </div>
+  <div
+    className="record-list__percentage-item"
+  >
+     
+    20 lbs
+     
+  </div>
+</li>
+`;

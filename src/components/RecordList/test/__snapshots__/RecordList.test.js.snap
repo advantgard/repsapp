@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordList renders correctly 1`] = `
+<ul
+  className="record-list"
+>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      10%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      20 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      20%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      35 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      30%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      50 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      40%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      65 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      50%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      80 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      60%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      100 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      70%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      115 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      80%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      130 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      90%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      145 lbs
+       
+    </div>
+  </li>
+  <li
+    className="record-list__row"
+  >
+    <div
+      className="record-list__label-item"
+    >
+       
+      100%
+       
+    </div>
+    <div
+      className="record-list__percentage-item"
+    >
+       
+      160 lbs
+       
+    </div>
+  </li>
+</ul>
+`;
