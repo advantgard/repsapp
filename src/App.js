@@ -1,5 +1,6 @@
 import React from "react";
 import { RecordInput, RecordList } from "./components/RecordList";
+import { NumberPicker } from "./components/ValuePicker";
 
 export default class App extends React.Component {
 
@@ -7,17 +8,20 @@ export default class App extends React.Component {
 		super();
 
 		this.state = {
-			record: 160,
+			record: 0,
 			steps: 10
 		};
 
-		this.handleRecordChange = this.handleRecordChange.bind( this );
+		this.modifyRecord = this.modifyRecord.bind( this );
 	}
 
-	handleRecordChange( evt ) {
+	modifyRecord( action, value ) {
+
+		const record = this.state.record;
+		const newValue = action === "increase" ? record + value : record - value;
 
 		this.setState( {
-			record: evt.target.value
+			record: newValue
 		} );
 
 	}
@@ -26,7 +30,11 @@ export default class App extends React.Component {
 
 		return (
 			<div className="rxapp">
-				<RecordInput onChange={this.handleRecordChange} value={this.state.record}/>
+				<NumberPicker
+					handler={this.modifyRecord}
+					value={this.state.record}
+					maxValue={999}
+				/>
 				<RecordList record={this.state.record} steps={this.state.steps}/>
 			</div>
 		);

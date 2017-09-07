@@ -2,7 +2,7 @@ import React from "react";
 import { round5 } from "../../lib/RecordListHelpers";
 import { RecordListRow } from "./RecordListRow";
 
-export const RecordList = ( props ) => {
+export const RecordList = props => {
 
 	const unit = props.record / props.steps;
 	const percentage = 100 / props.steps;
