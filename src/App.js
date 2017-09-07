@@ -1,5 +1,5 @@
 import React from "react";
-import { RecordInput, RecordList } from "./components/RecordList";
+import { RecordList } from "./components/RecordList";
 import { NumberPicker } from "./components/ValuePicker";
 
 export default class App extends React.Component {
