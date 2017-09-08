@@ -9,7 +9,8 @@ export default class App extends React.Component {
 
 		this.state = {
 			record: 0,
-			steps: 10
+			steps: 10,
+			maxValue: 999
 		};
 
 		this.modifyRecord = this.modifyRecord.bind( this );
@@ -17,12 +18,17 @@ export default class App extends React.Component {
 
 	modifyRecord( action, value ) {
 
-		const record = this.state.record;
-		const newValue = action === "increase" ? record + value : record - value;
+		if ( this.state.record <= this.state.maxValue ) {
 
-		this.setState( {
-			record: newValue
-		} );
+			const record = this.state.record;
+			const newValue = action === "increase" ? record + value : record - value;
+			const finalValue = newValue < 0 ? 0 : newValue;
+
+			this.setState( {
+				record: finalValue
+			} );
+
+		}
 
 	}
 
@@ -33,7 +39,7 @@ export default class App extends React.Component {
 				<NumberPicker
 					handler={this.modifyRecord}
 					value={this.state.record}
-					maxValue={999}
+					maxValue={this.state.maxValue}
 				/>
 				<RecordList record={this.state.record} steps={this.state.steps}/>
 			</div>
