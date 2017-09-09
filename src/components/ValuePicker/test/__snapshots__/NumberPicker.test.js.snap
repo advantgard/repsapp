@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ValuePicker renders correctly 1`] = `
+<div
+  className="number-picker"
+>
+   
+  <div
+    className="value-picker"
+  >
+    <button
+      className="value-picker__button--increase"
+      onClick={[Function]}
+    />
+    <div
+      className="value-picker__box"
+    >
+       
+      1
+       
+    </div>
+    <button
+      className="value-picker__button--decrease"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="value-picker"
+  >
+    <button
+      className="value-picker__button--increase"
+      onClick={[Function]}
+    />
+    <div
+      className="value-picker__box"
+    >
+       
+      6
+       
+    </div>
+    <button
+      className="value-picker__button--decrease"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="value-picker"
+  >
+    <button
+      className="value-picker__button--increase"
+      onClick={[Function]}
+    />
+    <div
+      className="value-picker__box"
+    >
+       
+      0
+       
+    </div>
+    <button
+      className="value-picker__button--decrease"
+      onClick={[Function]}
+    />
+  </div>
+   
+</div>
+`;
