@@ -2,6 +2,8 @@ import React from "react";
 import { RecordList } from "./components/RecordList";
 import { NumberPicker } from "./components/ValuePicker";
 
+require( "./scss/index.scss" );
+
 export default class App extends React.Component {
 
 	constructor() {
@@ -35,7 +37,7 @@ export default class App extends React.Component {
 	render() {
 
 		return (
-			<div className="rxapp">
+			<div className="wrapper">
 				<NumberPicker
 					handler={this.modifyRecord}
 					value={this.state.record}

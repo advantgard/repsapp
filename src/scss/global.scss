@@ -1,0 +1,31 @@
+@import "~normalize-scss/sass/normalize";
+@import "variables";
+
+@include normalize();
+
+body {
+  background-color: $color-1-dark;
+  color: $font-color;
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  background-color: $color-1;
+}
+
+@media screen and (min-width: $screen-sm-min) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: $container-sm;
+  }
+
+}

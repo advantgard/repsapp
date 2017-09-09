@@ -48,9 +48,8 @@ const config = {
           {
             loader: 'sass-loader',
             options: {
-              data: '@import "./sass-config.scss";',
               includePaths: [
-                path.join(__dirname, '/')
+	              path.join( __dirname, '/' ), "node_modules"
               ]
             }
           }
