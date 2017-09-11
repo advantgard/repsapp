@@ -1,0 +1,26 @@
+@import "variables";
+
+.record-list {
+
+  list-style: none;
+  margin: 5rem 0 0 0;
+  padding: 0;
+
+  &__row {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 1rem 0;
+
+    border-bottom: 2px solid $color-1-dark;
+
+  }
+
+  &__label-item, &__percentage-item {
+
+    width: 50%;
+
+  }
+
+}

@@ -4,9 +4,17 @@
 @include normalize();
 
 body {
+
+  font-family: "Roboto", sans-serif;
   background-color: $color-1-dark;
   color: $font-color;
+
 }
+
+//input, button {
+//  border: none;
+//  background-color: transparent;
+//}
 
 .container {
   width: 100%;
@@ -26,6 +34,8 @@ body {
 
   .wrapper {
     width: $container-sm;
+    box-sizing: border-box;
+    padding: 1.5rem 0 0;
   }
 
 }

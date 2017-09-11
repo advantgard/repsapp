@@ -1,0 +1,71 @@
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+  -moz-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($sizeValue) {
+  line-height: ($sizeValue * 10) + px;
+  line-height: $sizeValue + rem;
+}
+
+@mixin animation($animationName, $duration, $timingFunction, $delay) {
+  -webkit-animation: $animationName $duration $timingFunction $delay;
+  -moz-animation: $animationName $duration $timingFunction $delay;
+  -o-animation: $animationName $duration $timingFunction $delay;
+  animation: $animationName $duration $timingFunction $delay;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($top, $right, $bottom, $left, $color) {
+  -webkit-box-shadow: $top $right $bottom $left $color;
+  -moz-box-shadow: $top $right $bottom $left $color;
+  box-shadow: $top $right $bottom $left $color;
+}
+
+@mixin color-map($colorMap, $properties) {
+  @each $colorName, $color in $colorMap {
+    &--#{ $colorName } {
+      @each $property in $properties {
+        #{ $property }: $color;
+      }
+    }
+  }
+}
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-flow($direction, $wrap) {
+  @include flex-direction($direction);
+  @include flex-wrap($wrap);
+}
